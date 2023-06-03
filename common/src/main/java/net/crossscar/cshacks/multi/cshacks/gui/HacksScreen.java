@@ -19,10 +19,10 @@ public class HacksScreen extends Screen {
     }
 
     protected void init() {
-        for (Hack<?> hackInstance : HackGlobal.hacks) {
+        for (Hack<?> hackInstance : HackGlobal.hacks.values()) {
             GuiGlobal.categoryButtonOffsets.put(hackInstance.guiCategory, GuiGlobal.buttonOffset);
         }
-        for (Hack<?> hackInstance : HackGlobal.hacks) {
+        for (Hack<?> hackInstance : HackGlobal.hacks.values()) {
             Button hackConfigButton = Button.builder(hackInstance.getStateMessage(), (button) -> {
                 hackInstance.onConfigButtonClicked();
                 this.minecraft.setScreen(new HacksScreen(this.previousScreen));

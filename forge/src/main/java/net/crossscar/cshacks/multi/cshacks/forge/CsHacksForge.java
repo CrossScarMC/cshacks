@@ -21,6 +21,6 @@ public class CsHacksForge {
 
     @SubscribeEvent
     public void onTick(TickEvent.ClientTickEvent event) {
-        for (Hack<?> hackInstance : HackGlobal.hacks) hackInstance.tick();
+        for (Hack<?> hackInstance : HackGlobal.hacks.values()) hackInstance.tick();
     }
 }

@@ -12,6 +12,7 @@ public class TogglableHack extends Hack<Boolean> {
     }
     public void setState(Boolean newState) {
         super.setState(newState);
+        this.onChange();
         if (state) {
             this.onEnable();
             return;
@@ -24,6 +25,10 @@ public class TogglableHack extends Hack<Boolean> {
     }
 
     public void onDisable() {
+
+    }
+
+    public void onChange() {
 
     }
 

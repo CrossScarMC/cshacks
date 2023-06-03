@@ -12,7 +12,7 @@ public class CsHacksFabric implements ClientModInitializer {
         CsHacks.init();
 
         ClientTickEvents.START_CLIENT_TICK.register(client -> {
-            for (Hack<?> hackInstance : HackGlobal.hacks) hackInstance.tick();
+            for (Hack<?> hackInstance : HackGlobal.hacks.values()) hackInstance.tick();
         });
     }
 }

@@ -2,6 +2,7 @@
   "gui.cshacks": "csHacks",
   "gui.cshacks.hacks.fly": "Fly",
   "gui.cshacks.hacks.bright": "Full Bright",
+  "gui.cshacks.hacks.xray": "Xray",
   "gui.cshacks.hacks.toggleable.on": "[ON]",
   "gui.cshacks.hacks.toggleable.off": "[OFF]",
   "gui.cshacks.categories.move": "Movement",
