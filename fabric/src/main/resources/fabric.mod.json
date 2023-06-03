@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "cshacks",
+  "version": "${version}",
+
+  "name": "csHacks",
+  "description": "A basic hack client.",
+  "authors": ["CrossScar"],
+  "contact": {
+    "email": "crossscar@outlook.com",
+    "sources": "https://github/com/CrossScarMC/csHacks",
+    "issues": "https://github/com/CrossScarMC/csHacks/issues",
+    "homepage": "https://github/com/CrossScarMC/csHacks"
+  },
+
+  "license": "Mozilla Public License 2.0",
+  "icon": "icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "net.crossscar.cshacks.multi.cshacks.fabric.CsHacksFabric"
+    ],
+    "modmenu": [
+      "net.crossscar.cshacks.multi.cshacks.fabric.ModMenuConfig"
+    ]
+  },
+  "mixins": [
+    "cshacks.mixins.json",
+    "cshacks-common.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.14.21",
+    "minecraft": ">=1.19.4"
+  },
+  "suggests": {
+    "modmenu": "6.2.2"
+  }
+}
