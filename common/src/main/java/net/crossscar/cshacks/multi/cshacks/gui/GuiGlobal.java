@@ -8,7 +8,7 @@ import java.util.HashMap;
 
 public class GuiGlobal {
     public static int margin = 5;
-    public static int buttonOffset = 75;
+    public static int buttonOffset = 85;
 
     private static final ArrayList<Component> categories = new ArrayList<>();
 
